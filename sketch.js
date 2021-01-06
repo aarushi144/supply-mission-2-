@@ -16,8 +16,8 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 700);
-1	rectMode(CENTER);
+	createCanvas(800, 800);
+	rectMode(CENTER);
 	
 
 	packageSprite=createSprite(width/2, 80, 10,10);
@@ -35,10 +35,10 @@ function setup() {
 	side1 = createSprite (400 , 765 , 200 ,20 );
 	side1.shapeColor= "red";
 
-	side2 = createSprite ( 340, 765  , 20 ,100 );
+	side2 = createSprite ( 315, 720  , 20 ,100 );
 	side2.shapeColor= "red";
 
-	side3 = createSprite (460, 765 , 20 ,100 );
+	side3 = createSprite (485, 720 , 20 ,100 );
 	side3.shapeColor= "red";
 
 	engine = Engine.create();
@@ -57,12 +57,12 @@ function setup() {
 	side11.shapeColor= "red";
 	World.add(world, side11);
 
-	side22 = Bodies.rectangle (340, 765  , 20 ,100, {isStatic: true});
+	side22 = Bodies.rectangle (315, 720  , 20 ,100, {isStatic: true});
 	side22.shapeColor= "red";
 	World.add(world, side22)
 
 
-	side33 = Bodies.rectangle (460, 765  , 20 ,100, {isStatic: true});
+	side33 = Bodies.rectangle (485, 720 , 20 ,100, {isStatic: true});
 	side33.shapeColor= "red";
 	World.add(world, side33)
   
